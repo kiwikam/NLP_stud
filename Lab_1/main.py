@@ -101,7 +101,7 @@ async def get_article_content(url, session):
             return title, body, category, datetime
         else:
             print('Ошибка при запросе:', response.status)
-            return None, None
+            return None, None, None, None
 
 
 async def main():
